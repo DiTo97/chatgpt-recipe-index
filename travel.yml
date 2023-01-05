@@ -1,0 +1,35 @@
+api:
+  plan: https://github.com/DiTo97/travelplan-py3.git
+  checkout: plan/api
+  config:
+    name: recipe-api
+    author: Federico Minutoli
+    author_email: fede97.minutoli@gmail.com
+    description: A FastAPI API to query the recipe index
+    
+crawler:
+  plan: https://github.com/DiTo97/travelplan-py3.git
+  checkout: plan/standalone
+  config:
+    name: recipe-crawler
+    author: Federico Minutoli
+    author_email: fede97.minutoli@gmail.com
+    description: A crawler of recipes on the Internet by URL
+    
+database:
+  plan: https://github.com/DiTo97/travelplan-py3.git
+  checkout: plan/library
+  config:
+    name: recipe-database
+    author: Federico Minutoli
+    author_email: fede97.minutoli@gmail.com
+    description: A common library of data and ORM models of the recipe index
+    
+indexer:
+  plan: https://github.com/DiTo97/travelplan-py3.git
+  checkout: plan/standalone
+  config:
+    name: recipe-indexer
+    author: Federico Minutoli
+    author_email: fede97.minutoli@gmail.com
+    description: A ChatGPT-based indexer of recipes on the Internet

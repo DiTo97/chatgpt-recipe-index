@@ -1,0 +1,17 @@
+python: 3.9.12
+
+requirements:
+  - pip~=22.1.1
+  - setuptools~=62.3.2
+  - PyYAML~=6.0
+
+scopes:
+  dev:
+    requirements:
+      - black~=22.3.0
+      - docutils~=0.18.1
+      - flake8~=4.0.1
+      - isort~=5.10.1
+      - mypy~=0.950
+      - pytest~=7.1.2
+      - pytest-cov~=3.0.0

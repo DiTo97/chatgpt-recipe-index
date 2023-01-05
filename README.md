@@ -1,5 +1,7 @@
 # chatgpt-recipe-index
 
+[![Status badge](https://img.shields.io/badge/status-alpha-green.svg)](https://shields.io/)
+
 An index of recipes on the Internet crawled by ChatGPT.
 
 ## Acknowledgements

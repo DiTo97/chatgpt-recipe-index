@@ -1,0 +1,6 @@
+Given the extracted or the updated JSON object, do the following: Translate all keys and vals
+of the JSON object to English. Convert all ingredients names to the singular form, if plural.
+Convert all characters to lowercase. All specific names (recipe or ingredients) have to use 
+only the generic name, without mentioning specific brands, i.e., "Bacardi white rum" 
+has to turn into "white rum". Convert all keys and values of the JSON object to lowercase.
+Output only the JSON object after all the above transformations have been applied with no explanations.

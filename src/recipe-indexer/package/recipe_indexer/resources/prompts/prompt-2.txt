@@ -1,0 +1,7 @@
+Did you forget anything from the raw HTML to the JSON object in the "ingredients" field?
+Note that ingredients with null "quantity" and "name" in the form "a few X of y" should 
+become ingredients whose name becomes only "y" and whose quantity becomes "a few X". 
+For instance, an ingredient should be extracted from the phrase "a few springs of parsley" 
+with name "parsley" and quantity "a few springs". Output only "the JSON object: <object>".
+If you did forget something, replace <object> above with the updated JSON object; 
+else, replace it with the original extracted JSON object.

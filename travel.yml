@@ -14,7 +14,7 @@ crawler:
     name: recipe-crawler
     author: Federico Minutoli
     author_email: fede97.minutoli@gmail.com
-    description: A crawler of recipes on the Internet by URL
+    description: A crawler of possible URLs of recipes on the Internet
     
 database:
   plan: https://github.com/DiTo97/travelplan-py3.git

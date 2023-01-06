@@ -4,7 +4,7 @@ from sqlmodel import Field, Relationship, SQLModel
 
 
 class Dosage_base(SQLModel):
-    """A base SQL model that maps the dosage of any ingredient in any recipe"""
+    """A SQL model that maps the dosage of any ingredient in any recipe (base)"""
 
     quantity: typing.Optional[float] = Field(default=None, gt=0.0)
     unit_of_measure: typing.Optional[str] = None
@@ -14,11 +14,11 @@ class Dosage_base(SQLModel):
 
 
 class Dosage_create(Dosage_base):
-    """A create SQL model that maps the dosage of any ingredient in any recipe"""
+    """A SQL model that maps the dosage of any ingredient in any recipe (create)"""
 
 
 class Dosage_read(Dosage_base):
-    """A read SQL model that maps the dosage of any ingredient in any recipe"""
+    """A SQL model that maps the dosage of any ingredient in any recipe (read)"""
 
     ingredient_id: int
     recipe_id: int
@@ -43,7 +43,7 @@ class Dosage(Dosage_base, table=True):
 
 
 class Ingredient_base(SQLModel):
-    """A base SQL model that characterizes an ingredient"""
+    """A SQL model that characterizes an ingredient (base)"""
 
     name: str = Field(index=True, unique=True)
 
@@ -51,11 +51,11 @@ class Ingredient_base(SQLModel):
 
 
 class Ingredient_create(Ingredient_base):
-    """A create SQL model that characterizes an ingredient"""
+    """A SQL model that characterizes an ingredient (create)"""
 
 
 class Ingredient_read(Ingredient_base):
-    """A read SQL model that characterizes an ingredient"""
+    """A SQL model that characterizes an ingredient (read)"""
 
     id: int
 
@@ -67,7 +67,7 @@ class Ingredient(Ingredient_base, table=True):
 
 
 class Recipe_base(SQLModel):
-    """A base SQL model that characterizes a recipe"""
+    """A SQL model that characterizes a recipe (base)"""
 
     name: str = Field(index=True, unique=True)
     type: str = Field(index=True)
@@ -79,11 +79,11 @@ class Recipe_base(SQLModel):
 
 
 class Recipe_create(Recipe_base):
-    """A create SQL model that characterizes a recipe"""
+    """A SQL model that characterizes a recipe (create)"""
 
 
 class Recipe_read(Recipe_base):
-    """A read SQL model that characterizes a recipe"""
+    """A SQL model that characterizes a recipe (read)"""
 
     id: int
 
